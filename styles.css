@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Cambié `height` a `min-height` */
+    background-color: #a4d3ee;
+   
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: left; /* Alinea el contenido del encabezado a la izquierda */
+    margin-bottom: 60px;
+}
+
+#btnGuardar,
+#btnEliminar {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px; /* Ajusta este valor según sea necesario */
+}
+
+.btn-container {
+    display: flex; /* Hacer que los botones estén en línea */
+    justify-content: space-around; /* Distribuir uniformemente los botones horizontalmente */
+    width: 100%; /* Ajustar el ancho del contenedor al 100% */
+    margin-bottom: 20px; /* Agregar un margen inferior para separar del contenido siguiente */
+}
+
+#btnGuardar:hover,
+#btnEliminar:hover {
+    background-color: #45a049;
+}
+
+#memory {
+    display: flex;
+    justify-content: center; /* Alinea las particiones al centro horizontal */
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px; /* Ajusta según sea necesario */
+    margin-bottom: 20px; /* Ajusta según sea necesario */
+}
+
+.partition {
+    width: calc(100% / 5); /* Ajusta esto según la cantidad de particiones */
+    height: 50px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partition span {
+    font-size: 14px;
+    color: #333; /* Color del texto */
+}
+    
+.title {
+    text-align: center;
+    margin-top: 20px; /* Ajusta según sea necesario */
+    margin-bottom: 10px; /* Ajusta según sea necesario */
+    font-size: 24px; /* Ajusta según sea necesario */
+    color: #333; /* Color del texto */
+}
+
+.ram-capacity {
+    text-align: center;
+    font-size: 16px;
+    color: #666; /* Color del texto */
+}
+
+
+    
+
+
+
